@@ -1,4 +1,4 @@
-<?php 
+<?php
 include('lib/session.php');
 
 include('lib/top.php');
@@ -8,8 +8,6 @@ include('lib/top.php');
 <meta name="description" content="Direccion de El Pinchín en Parquesol, Valladolid" />
 
 <style media="all">
-
-<?php if($_SESSION["m"]==0){ ?>
 #mapa{
 	width:492px;
 	height:280px;
@@ -17,13 +15,14 @@ include('lib/top.php');
 	margin-left:70px;
 	margin-bottom:20px;
 }
-<?php }else{ ?>
+
+@media all and (min-width: 20em) {
 #mapa{
 	width:100%;
 	height:180px;
 	margin:10px 0;
 }
-<?php } ?>
+}
 
 </style>
 
@@ -38,10 +37,10 @@ var direccion = 'Calle José Garrote Tobar 22, 47014 Valladolid';
 
   function initialize() {
     geocoder = new google.maps.Geocoder();
-	
+
 	geocoder.geocode( { 'address': direccion}, function(results, status) {
       if (status == google.maps.GeocoderStatus.OK) {
-		
+
 		var myOptions = {
 		  zoom: 18,
 		  center: results[0].geometry.location,
@@ -50,7 +49,7 @@ var direccion = 'Calle José Garrote Tobar 22, 47014 Valladolid';
 		  panControl: false
 		}
 		map = new google.maps.Map(document.getElementById("mapa"), myOptions);
-		
+
 		//creamos marcador
         var marker = new google.maps.Marker({
 			animation: google.maps.Animation.DROP,
@@ -58,14 +57,14 @@ var direccion = 'Calle José Garrote Tobar 22, 47014 Valladolid';
 			icon: markerImg,
             position: results[0].geometry.location
         });
-		
+
       } else {
         alert("Geocode was not successful for the following reason: " + status);
       }
     });
   }
-	
-$(document).ready(function() { 
+
+$(document).ready(function() {
   initialize();
 });
 </script>
@@ -73,7 +72,6 @@ $(document).ready(function() {
 </head>
 
 <body>
-<?php include('lib/header.php'); ?>
 
 <div id="cuerpo"><div class="content">
 
