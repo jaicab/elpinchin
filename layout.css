@@ -8,10 +8,14 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 17px;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 #header {
   padding: 0;
   margin: 0;
-  height: 600px;
 }
 
 /* COMMON CLASSES */
@@ -19,18 +23,15 @@ body {
   clear: both;
 }
 
-.headerimg {
-  background-position: center top;
-  background-repeat: no-repeat;
+#headerimg img {
   width: 100%;
-  height: 600px;
-  position: absolute;
+  height: 300px;
+  object-fit: cover;
 }
 
 /* NAVIGATION */
 #nav-outer {
-  position: relative;
-  top: 24px;
+  text-align: center;
   background: rgba(175, 188, 82, 0.8);
 }
 #navigation #logo img {
@@ -98,23 +99,14 @@ body {
   padding-left: 864px;
 }
 
-#menu {
-  position: absolute;
-  right: 20px;
-  top: 10px;
-}
 #menu a {
-  padding: 36px 0 36px 0;
   display: inline-block;
+  padding: 0.6em;
   color: #f5f5f5;
-  min-width: 100px;
+  max-width: 24%;
   text-align: center;
-  background-position: center 20px;
-  background-repeat: no-repeat;
-  font-family: "Lobster Two", cursive;
-  font-size: 22px;
-  border-radius: 50px;
-  margin-left: 10px;
+  font-size: 19px;
+  border-radius: 5px 5px 0 0;
 }
 #menu a:first-child {
 }
@@ -130,15 +122,15 @@ body {
 }
 
 .content {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1em;
   position: relative;
 }
 
 #cuerpo {
   border-top: 1px solid #4f4432;
-  padding: 10px 0;
+  padding: 1em 0;
   background: #fff;
 }
 
@@ -183,4 +175,38 @@ a:hover {
 #copy {
   font-size: 16px;
   text-align: center;
+}
+
+@media all and (min-width: 50em) {
+  #logo {
+    display: inline-block;
+    float: left;
+  }
+
+  #navigation {
+    overflow: hidden;
+  }
+
+  #menu {
+    margin-top: 0.5em;
+    margin-left: 1em;
+    float: right;
+  }
+
+  #menu a {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-family: "Lobster Two", cursive;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  #headerimg img {
+    height: 500px;
+  }
+
+  #cuerpo {
+    padding: 2em 0;
+  }
 }
