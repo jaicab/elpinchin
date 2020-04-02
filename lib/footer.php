@@ -1,6 +1,6 @@
 <div id="footer">
 	<div class="content">
-        <div id="copy"><b>&copy;<?php echo date('Y'); ?> ElPinchin.com</b> - Desarrollado por <a target="_blank" href="https://jaicab.com" title="Jaime Caballer is a frontend architect based in London">Jaime Caballero</a></div>
+        <div id="copy"><b>&copy;ElPinchin.com</b> - Desarrollado por <a target="_blank" href="https://jaicab.com" title="Jaime Caballero is a frontend architect based in London">Jaime Caballero</a></div>
     </div>
 </div>
 

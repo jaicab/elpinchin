@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="robots" content="all" />
+    <link rel="author" href="./humans.txt" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+
+    <link href="./layout.css" type="text/css" rel="stylesheet" media="all" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+    <script
+      type="text/javascript"
+      language="javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"
+    ></script>
+    <link
+      href="http://fonts.googleapis.com/css?family=Lobster+Two:400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Slider -->
+    <script type="text/javascript" src="./lib/script.js"></script>
+
+    <script language="javascript" type="text/javascript">
+      $(function() {
+        $("#up").click(function() {
+          $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
+      });
+    </script>
+    <title>Contacto | El Pinchin - Bar en Parquesol, Valladolid</title>
+    <meta
+      name="keywords"
+      content="contacto, telefono, email, pinchin, bar, parquesol, valladolid, restaurante"
+    />
+    <meta
+      name="description"
+      content="Contacta con El Pinchín en Parquesol, Valladolid"
+    />
+
+    <link href="./lib/forms.css" type="text/css" rel="stylesheet" media="all" />
+
+    <style media="all">
+      h2 {
+        margin: 15px 0;
+      }
+      h2 span {
+        min-width: 130px;
+        display: inline-block;
+        color: #922826;
+      }
+      #qr img {
+        position: relative;
+        float: left;
+        width: 120px;
+        margin-right: 30px;
+        padding: 5px;
+        background: #fff;
+      }
+      #qr font {
+        position: relative;
+        top: 50px;
+        font-family: "Museo500Regular", Arial, Helvetica, sans-serif;
+      }
+
+      form {
+        float: right;
+        margin-left: 70px;
+      }
+      input[type="text"],
+      input[type="email"] {
+        width: 78%;
+      }
+      textarea {
+        width: 470px;
+        height: 120px;
+        margin-left: 0;
+        margin-top: 2px;
+        resize: vertical;
+        padding: 10px;
+      }
+
+      @media all and (min-width: 20em) {
+        #qr {
+          display: none;
+        }
+        textarea {
+          width: 95%;
+          height: 140px;
+          resize: vertical;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="header">
+      <!-- Top navigation on top of the images -->
+      <div id="nav-outer">
+        <div id="navigation" class="content">
+          <div id="logo">
+            <img src="./img/logo.png" border="0" align="logo" />
+          </div>
+          <div id="menu">
+            <a href="/" id="menu0">Inicio</a
+            ><a href="/opinion" id="menu1">Opinión</a
+            ><a href="/direccion" id="menu2">Dirección</a
+            ><a class="selected" id="menu3">Contacto</a>
+          </div>
+        </div>
+      </div>
+      <div id="headerimg">
+        <img
+          src="./images/familia.jpg"
+          alt="Paco y Maria en la barra de El
+        Pinchin"
+        />
+      </div>
+      <!-- Slideshow controls -->
+      <div id="headernav-outer">
+        <div id="headernav">
+          <div id="back" class="btn"></div>
+          <div id="control" class="btn"></div>
+          <div id="next" class="btn"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cuerpo">
+      <div class="content">
+        <h1>Contacta con nosotros.</h1>
+        <p>
+          Cualquier pregunta que tengas, nos la puedes hacer a
+          <a href="mailto:contacto@elpinchin.com">contacto@elpinchin.com</a>.
+          Intentaremos contestar tus dudas lo antes posible.
+        </p>
+        <p>Recordamos que <b>conviene reservar</b>.</p>
+        <p>
+          También puedes llamarnos directamente al bar y hablar con nosotros:
+        </p>
+        <h2><span>El Pinchin: </span> 983 37 38 27</h2>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="content">
+        <div id="copy">
+          <b>&copy;ElPinchin.com</b> - Desarrollado por
+          <a
+            target="_blank"
+            href="https://jaicab.com"
+            title="Jaime Caballero is a frontend architect based in London"
+            >Jaime Caballero</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!--Google Analytics-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-17212759-11"]);
+      _gaq.push(["_trackPageview"]);
+
+      (function() {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://ssl"
+            : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
