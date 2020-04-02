@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="robots" content="all" />
+    <link rel="author" href="/humans.txt" />
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+
+    <link href="./layout.css" type="text/css" rel="stylesheet" media="all" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <script type="text/javascript">
+      addEventListener(
+        "load",
+        function() {
+          setTimeout(hideURLbar, 0);
+        },
+        false
+      );
+      function hideURLbar() {
+        window.scrollTo(0, 1);
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      language="javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"
+    ></script>
+    <link
+      href="http://fonts.googleapis.com/css?family=Lobster+Two:400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Slider -->
+    <script type="text/javascript" src="./lib/script.js"></script>
+
+    <script language="javascript" type="text/javascript">
+      $(function() {
+        $("#up").click(function() {
+          $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
+      });
+    </script>
+    <title>Dirección | El Pinchin - Bar en Parquesol, Valladolid</title>
+    <meta
+      name="keywords"
+      content="direccion, localizacion, pinchin, bar, parquesol, vinos, valladolid, restaurante"
+    />
+    <meta
+      name="description"
+      content="Direccion de El Pinchín en Parquesol, Valladolid"
+    />
+
+    <style media="all">
+      #mapa {
+        width: 492px;
+        height: 280px;
+        float: right;
+        margin-left: 70px;
+        margin-bottom: 20px;
+      }
+
+      #mapa iframe {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media all and (min-width: 20em) {
+        #mapa {
+          width: 50%;
+          height: 400px;
+          margin: 10px 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="header">
+      <!-- jQuery handles to place the header background images -->
+      <div id="headerimgs">
+        <div id="headerimg1" class="headerimg"></div>
+        <div id="headerimg2" class="headerimg"></div>
+      </div>
+      <!-- Top navigation on top of the images -->
+      <div id="nav-outer">
+        <div id="navigation" class="content">
+          <div id="logo">
+            <img src="./img/logo.png" border="0" align="logo" />
+          </div>
+          <div id="menu">
+            <a href="/" id="menu0">Inicio</a
+            ><a href="/opinion" id="menu1">Opinión</a
+            ><a class="selected" id="menu2">Dirección</a
+            ><a href="/contacto" id="menu3">Contacto</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slideshow controls -->
+      <div id="headernav-outer">
+        <div id="headernav">
+          <div id="back" class="btn"></div>
+          <div id="control" class="btn"></div>
+          <div id="next" class="btn"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cuerpo">
+      <div class="content">
+        <div id="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.955866379842!2d-4.761682384226827!3d41.635085379242206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd476d704bd1a1ab%3A0xe23412bc5cbcbd34!2sEl%20Pinchin!5e0!3m2!1ses!2ses!4v1585844358943!5m2!1ses!2ses"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+
+        <h1>Ven a tomar algo.</h1>
+        <p>Nuestra dirección es:</p>
+        <p>
+          Calle José Garrote Tobar, 22<br />
+          47014 Valladolid (Zona Parquesol)
+        </p>
+        <br />
+        <br />
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="content">
+        <div id="copy">
+          <b>&copy;2020 ElPinchin.com</b> - Desarrollado por
+          <a
+            target="_blank"
+            href="https://jaicab.com"
+            title="Jaime Caballero is a frontend architect based in London"
+            >Jaime Caballero</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!--Google Analytics-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-17212759-11"]);
+      _gaq.push(["_trackPageview"]);
+
+      (function() {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://ssl"
+            : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

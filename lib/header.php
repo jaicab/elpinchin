@@ -9,7 +9,7 @@
 	<div id="nav-outer">
 		<div id="navigation" class="content">
         	<div id="logo">
-            	<img src="/img/logo.png" border="0" align="logo" />
+            	<img src="./img/logo.png" border="0" align="logo" />
             </div>
 			<?php include('menu.php'); ?>
 		</div>
@@ -22,11 +22,4 @@
 			<div id="next" class="btn"></div>
 		</div>
 	</div>
-	<!-- jQuery handles for the text displayed on top of the images -->
-	<!--<div id="headertxt" class="content">
-		<p class="caption">
-			<span id="firstline"></span>
-			<a href="#" id="secondline"></a>
-		</p>
-	</div>-->
 </div>
