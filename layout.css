@@ -70,7 +70,6 @@ img {
   color: #7f000c;
 }
 
-
 /* HEADER HAVIGATION */
 #headernav-outer {
   position: relative;
@@ -84,11 +83,11 @@ img {
 
 #menu a {
   display: inline-block;
-  padding: 0.6em;
+  padding: 0.5em;
   color: #f5f5f5;
   max-width: 24%;
   text-align: center;
-  font-size: 19px;
+  font-size: 18px;
   border-radius: 5px 5px 0 0;
 }
 #menu a:hover {
