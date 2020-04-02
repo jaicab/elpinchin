@@ -70,23 +70,6 @@ img {
   color: #7f000c;
 }
 
-/* CONTROLS */
-.btn {
-  height: 32px;
-  width: 32px;
-  float: left;
-  cursor: pointer;
-  display: none;
-}
-#back {
-  background-image: url("./images/btn_back.png");
-}
-#next {
-  background-image: url("./images/btn_next.png");
-}
-#control {
-  background-image: url("./images/btn_pause.png");
-}
 
 /* HEADER HAVIGATION */
 #headernav-outer {
@@ -107,11 +90,6 @@ img {
   text-align: center;
   font-size: 19px;
   border-radius: 5px 5px 0 0;
-}
-#menu a:first-child {
-}
-#menu a:last-child {
-  border: none;
 }
 #menu a:hover {
   background-color: #b17d6f;
