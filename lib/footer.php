@@ -1,6 +1,6 @@
 <div id="footer">
 	<div class="content">
-        <div id="copy"><b>&copy;2020 ElPinchin.com</b> - Desarrollado por <a target="_blank" href="https://jaicab.com" title="Jaime Caballero is a frontend architect based in London">Jaime Caballero</a></div>
+        <div id="copy"><b>&copy;ElPinchin.com</b> - Desarrollado por <a target="_blank" href="https://jaicab.com" title="Jaime Caballero is a frontend architect based in London">Jaime Caballero</a></div>
     </div>
 </div>
 
